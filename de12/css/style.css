@@ -52,4 +52,10 @@ span.blackback{
     color: #efefef;
 }
 .blue {color: #2687d1;}
+.red {color: #ef3a55;}
 ul {margin-top: 0;}
+
+.waku {border: 3px solid rgb(235, 241, 160);
+padding: 10px;}
+
+.marker {background: linear-gradient(transparent 60%, #ffb6c1 60%);}
