@@ -1,27 +1,92 @@
+
+
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>XBP_HPsample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBP | Mitsuki's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <logotohome>
-    <a href="./index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    <h1>XBP</h1>
-        <h2>mitsukiのXBPポートフォリオ一覧</h2>
-        <!-- このようにするとコードとして認識されない。（メモができる）-->
-        <!--番号付きのリスト-->
-        <ol>
-            <li><a href="./de12/index.html">デザイン演習Ⅰ・Ⅱ</a></li>
-            <li><a href="./digi_fab/index.html">デジタルファブリケーション</a></li>
-        </ol>
 
-            
-        <br>
-        <br>
+    <!-- ヘッダー：青いチェック柄 -->
+    <header class="hero">
+        <a href="./index.html" class="logo">
+            <img src="./images/0_XBlogo.png" alt="XBPロゴ">
+        </a>
 
+        <div class="hero-title">
+            <p class="hero-small">LEARN · CREATE · EXPLORE</p>
+            <h1>X Business Program</h1>
+            <p class="hero-name">MITSUKI'S PORTFOLIO</p>
+        </div>
+
+        <!-- 将来メニューを追加する場所 -->
+        <!-- <button class="menu-button">MENU ☰</button> -->
+    </header>
+
+    <!-- CONTENTS：案内表示風 -->
+    <div class="contents-heading">
+        
+<div class="ticker">
+    <div class="ticker-track">
+        <div class="ticker-group">
+            <span>CONTENTS</span>
+            <span class="ticker-star">✳</span>
+            <span>CONTENTS</span>
+            <span class="ticker-star">✳</span>
+        </div>
+
+        <div class="ticker-group" aria-hidden="true">
+            <span>CONTENTS</span>
+            <span class="ticker-star">✳</span>
+            <span>CONTENTS</span>
+            <span class="ticker-star">✳</span>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <!-- 授業カード -->
+    <main class="works">
+        <div class="works-intro">
+            <p class="section-label">MY LEARNING JOURNEY</p>
+            <h2>Explore my work.</h2>
+            <p>授業で学んだことや、制作の記録。</p>
+        </div>
+
+        <div class="card-list">
+
+            <a href="./de12/index.html" class="work-card">
+                <div class="card-number">01</div>
+                <div class="card-content">
+                    <p class="card-label">DESIGN</p>
+                    <h3>DESIGN EXERCISE</h3>
+                    <p class="card-japanese">デザイン演習 I・II</p>
+                </div>
+                <span class="card-arrow">↗</span>
+            </a>
+
+            <a href="./digi_fab/index.html" class="work-card">
+                <div class="card-number">02</div>
+                <div class="card-content">
+                    <p class="card-label">MAKING</p>
+                    <h3>DIGITAL FABRICATION</h3>
+                    <p class="card-japanese">デジタルファブリケーション</p>
+                </div>
+                <span class="card-arrow">↗</span>
+            </a>
+
+        </div>
+
+        <footer>
+            <p>X BUSINESS PROGRAM</p>
+            <p>MY PORTFOLIO © 2026</p>
+        </footer>
+    </main>
 
 </body>
 </html>

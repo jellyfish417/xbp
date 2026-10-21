@@ -4,51 +4,389 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
 /* フォントを指定したいところで */
 
-logo img{
+
+
+/* ===== 全体 ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', 'M PLUS Rounded 1c', sans-serif;
+    color: #294B6A;
+    background: #EAF4FC;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ===== ヘッダー：青いチェック柄 ===== */
+.hero {
+    min-height: 280px;
+    padding: 32px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #EAF4FC;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 38px,
+            #B7D8F2 39px,
+            #B7D8F2 41px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 38px,
+            #B7D8F2 39px,
+            #B7D8F2 41px
+        );
+    background-size: 40px 40px;
+}
+
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 5%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(-8deg) scale(1.05);
+}
+
+.logo img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* 画像のトリミング */
 }
 
-logotohome img{
-    border-radius: 70%;
-    width: 70px;
-    height: 70px;
-    object-fit: cover; /* 画像のトリミング */
+.hero-title {
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    padding: 24px 36px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(67, 113, 153, 0.10);
+    animation: fade-up 0.8s ease both;
+}
+
+.hero-small {
+    margin: 0 0 8px;
+    color: #6094C3;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+}
+
+.hero-title h1 {
+    margin: 0;
+    color: #285B87;
+    font-size: clamp(25px, 4vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.hero-name {
+    margin: 8px 0 0;
+    color: #7297B7;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+}
+
+/* ===== CONTENTS：案内表示 ===== */
+.contents-heading {
+    padding: 24px 0;
+    background: #FFFFFF;
+    border-top: 1px solid #D9E7F2;
+    border-bottom: 1px solid #D9E7F2;
+    overflow: hidden;
 }
 
 
-
-/* ========== common ========== */
-html, body {
-	font-size: 16px;
-	font-family: sans-serif;
-	color: #393939;
-    margin-left: 15px;
-    margin-bottom: 40px;
-	background: #efefef;
-}
-h1{
-    text-indent: 0em;
-}
-h2{
-    margin-left: 1em;
-    margin-top: 1em;
-}
-h3{
-    margin-left: 2em;
-}
-div{
-    margin-top: 1em;
-    margin-left: 3em;
-}
-p{
-    margin-left: 3em;
-}
-span.blackback{
-    text-indent: 3em;
-    background: #393939;
-    color: #efefef;
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    background: #214D73;
+    color: #FFFFFF;
+    padding: 13px 0;
 }
 
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 18s linear infinite;
+    will-change: transform;
+}
+
+.ticker-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 100px;
+    padding-right: 100px;
+}
+
+.ticker-group span {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.ticker-star {
+    color: #A8DFFF;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ===== 授業一覧：薄水色の背景 ===== */
+.works {
+    min-height: 480px;
+    padding: 48px 7% 24px;
+    background: #EAF4FC;
+}
+
+.works-intro {
+    margin: 0 auto 30px;
+    max-width: 1000px;
+    animation: fade-up 0.8s 0.15s ease both;
+}
+
+.section-label {
+    margin: 0 0 4px;
+    color: #709DC2;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.works-intro h2 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 40px);
+    letter-spacing: -0.04em;
+}
+
+.works-intro > p:last-child {
+    margin: 8px 0 0;
+    color: #718BA2;
+    font-size: 14px;
+}
+
+/* ===== 角丸カード ===== */
+.card-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.work-card {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 26px 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(180, 210, 235, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 5px 18px rgba(65, 110, 150, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    animation: fade-up 0.7s ease both;
+}
+
+.work-card:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(65, 110, 150, 0.14);
+    border-color: #B5D6F0;
+}
+
+.card-number {
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: #E3F0FB;
+    border-radius: 20px;
+    color: #397DB4;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-label {
+    margin: 0 0 3px;
+    color: #7CA3C4;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #294F70;
+    font-size: clamp(17px, 2.5vw, 25px);
+    overflow-wrap: anywhere;
+}
+
+.card-japanese {
+    margin: 4px 0 0;
+    color: #7A91A5;
+    font-size: 13px;
+}
+
+.card-arrow {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: #F0F7FC;
+    border-radius: 50%;
+    color: #397DB4;
+    font-size: 22px;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.work-card:hover .card-arrow {
+    transform: translate(3px, -3px);
+    background: #DCECF9;
+}
+
+/* ===== フッター ===== */
+footer {
+    max-width: 1000px;
+    margin: 48px auto 0;
+    padding: 20px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid #D2E4F3;
+    color: #84A2BC;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== 登場アニメーション ===== */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== スマートフォン対応 ===== */
+@media (max-width: 600px) {
+    .hero {
+        min-height: 250px;
+        padding: 85px 16px 30px;
+    }
+
+    .logo {
+        top: 15px;
+        left: 16px;
+    }
+
+    .logo img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hero-title {
+        padding: 22px 16px;
+        border-radius: 20px;
+    }
+
+    .contents-heading {
+        padding: 16px 0;
+    }
+
+    .works {
+        padding: 36px 18px 20px;
+    }
+
+    .work-card {
+        gap: 14px;
+        padding: 20px 16px;
+        min-height: 125px;
+        border-radius: 20px;
+    }
+
+    .card-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+
+    .card-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: 36px;
+    }
+}
+
+/* 動きを控えたい人向け */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

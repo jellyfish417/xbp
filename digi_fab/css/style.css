@@ -73,9 +73,10 @@ h1 {
     border-radius: 25px;
 
     font-size: 50px;
-    padding: 18px 100px;
+    padding: 18px 0;
     margin: 10px auto 35px;
-    width: fit-content;
+    width: 70%;
+    box-sizing: border-box;
 
     box-shadow: 0 6px 0 #e98bb2, 0 8px 12px #f5d4e3;
     text-shadow: 1px 2px 2px #d879a1;
@@ -194,16 +195,17 @@ section {
 
 .candy-title {
     font-family: "Baloo 2", sans-serif;
-    font-size: 42px;
+    font-size: 55px;
     font-weight: 800;
     text-align: center;
     background-color: #ffb6d5;
     color: white;
     border: 3px solid #f28bb8;
     border-radius: 25px;
-    padding: 18px 80px;
+    padding: 18px 0;
     margin: 10px auto 35px;
-    width: fit-content;
+    width: 70%;
+    box-sizing: border-box;
     box-shadow: 0 6px 0 #e98bb2, 0 8px 12px #f5d4e3;
     text-shadow: 1px 2px 2px #d879a1;
     letter-spacing: 2px;
