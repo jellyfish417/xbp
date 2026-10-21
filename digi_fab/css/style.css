@@ -27,7 +27,7 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #efefef;
+	background: #f9e0ee;
 }
 h1{
     text-indent: 0em;
@@ -50,5 +50,142 @@ span.blackback{
     text-indent: 3em;
     background: #393939;
     color: #efefef;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 30px;
+    color: #333;
+}
+
+h1 {
+     font-family: "Baloo 2", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+
+      text-align: center;
+    background-color: #ffb6d5;
+    color: white;
+    border: 3px solid #f28bb8;
+    border-radius: 25px;
+
+    font-size: 50px;
+    padding: 18px 100px;
+    margin: 10px auto 35px;
+    width: fit-content;
+
+    box-shadow: 0 6px 0 #e98bb2, 0 8px 12px #f5d4e3;
+    text-shadow: 1px 2px 2px #d879a1;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.sketch {
+    background-color: #fff8fb;
+    border: 2px solid #f6c5d9;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto 35px;
+    max-width: 700px;
+}
+.sketch h2 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ee91b7;
+    margin-bottom: 15px;
+}
+.sketch img {
+       display: block;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+
+}
+
+.process {
+       background-color: #fff4bd;
+    border: 3px solid #f4d96b;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.process h2 {
+    color: #80652b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.photos img {
+    width: 40%;
+    height: 180px;
+    object-fit: contain;
+}
+.star-frame {
+    position: relative;
+    padding: 45px 35px;
+    margin: 25px 15px;
+    border: 3px dashed #f2d1fa;
+    border-radius: 12px;
+    background-color: #fffafb;
+}
+
+.sketch-title {
+    position: relative;
+    display: inline-block;
+}
+
+.title-star {
+    position: absolute;
+    top: -8px;
+    right: -22px;
+    color: #ee91b7;
+    font-size: 25px;
+    line-height: 1;
+}
+.sketch-description {
+    color: #80652b;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fffaf0;
+    border-radius: 8px;
+}
+.process-description {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background-color: #fffaf0;
+    border-left: 3px solid #e8c96e;
+    border-radius: 5px;
+    color: #74645f;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.stl-link {
+    display: inline-block;
+    background-color: #ffb6d5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
