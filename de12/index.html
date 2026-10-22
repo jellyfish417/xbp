@@ -1,34 +1,95 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>XBP_HPsample</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/xbp.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>デザイン演習 I・II</title>
+
+  <!-- デザイン演習専用CSS -->
+  <link rel="stylesheet" href="./css/de12.css">
+
+  <!-- デジタルファブリケーションと同じフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    <h1>デザイン演習Ⅰ・Ⅱ</h1>
-        <h2>HTMLに関すること</h2>
-        <ol>
-            <li><a href="./hp1.html" target="_blank">htmlの基礎知識</a></li>
-            <li><a href="./hp2.html" target="_blank">htmlのwork</a></li>
-            <li><a href="./test.html" target="_blank">テストページ</a></li>
-        </ol>
-        <h2>演習ノート一覧</h2>
-        <ol>
-            <li><a href="./1.html" target="_blank">第1回</a></li>
-        </ol>
-<ol>
-            <li><a href="./2.html" target="_blank">第2回</a></li>
-        </ol>
 
-    
-<br>
-<br>
+  
+  <header class="page-header">
+    <h1>DESIGN EXERCISEⅠⅡ</h1>
+  </header>
 
+  <main>
+
+    <!-- HTMLに関すること -->
+    <section class="html-section">
+      <h2>HTMLに関すること</h2>
+
+      <div class="html-links">
+
+        <a class="html-link" href="./hp1.html">
+          <span class="link-icon">〈/〉</span>
+          <span>htmlの基礎知識</span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="html-link" href="./hp2.html">
+          <span class="link-icon">▰</span>
+          <span>htmlのwork</span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="html-link" href="./test.html">
+          <span class="link-icon">▤</span>
+          <span>テストページ</span>
+          <span class="arrow">›</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 演習ノート一覧 -->
+    <section class="notes-section">
+      <h2>演習ノート一覧</h2>
+
+      <div class="notes-grid">
+
+        <a href="./1.html" class="note-card">
+          <div class="note-image note-one">
+            <span>01</span>
+          </div>
+          <div class="note-info">
+            <h3>第1回</h3>
+            <span class="arrow">›</span>
+          </div>
+        </a>
+
+        <a href="./2.html" class="note-card">
+          <div class="note-image note-two">
+            <span>02</span>
+          </div>
+          <div class="note-info">
+            <h3>第2回</h3>
+            <span class="arrow">›</span>
+          </div>
+        </a>
+
+        <div class="note-card note-empty">
+          <div class="empty-symbol">＋</div>
+          <p>新しいノートを追加</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    DESIGN EXERCISE
+  </footer>
 
 </body>
 </html>

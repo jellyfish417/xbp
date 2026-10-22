@@ -1,0 +1,227 @@
+
+/* ===== 全体 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 4%;
+  background: #fff8dc;
+  color: #55443a;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 82px;
+  height: auto;
+  display: block;
+  margin-bottom: 42px;
+}
+
+/* ===== メインタイトル ===== */
+.page-header h1 {
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 48px;
+}
+
+.page-header h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 10px;
+  background: #edc65c;
+}
+
+/* ===== セクション見出し ===== */
+section h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.html-section {
+  margin-bottom: 58px;
+}
+
+/* ===== HTMLリンク：横長3列 ===== */
+.html-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.html-link {
+  min-height: 104px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  background: #fffdf5;
+  border: 2px solid #f3df9d;
+  border-radius: 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  /* 浮き上がり効果はつけない */
+  transition: background-color 0.2s ease;
+}
+
+.link-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff1c4;
+  color: #bd9132;
+  font-size: 19px;
+}
+
+.arrow {
+  margin-left: auto;
+  color: #dfb747;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.html-link:hover {
+  background: #fff6d9;
+}
+
+/* ===== 演習ノート一覧 ===== */
+.notes-section h2::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 10px;
+  background: #edc65c;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.note-card {
+  display: block;
+  min-width: 0;
+  padding: 14px;
+  border-radius: 20px;
+  background: #fffdf7;
+  box-shadow: 0 6px 18px #92764412;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px #92764425;
+}
+
+.note-image {
+  height: 180px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #fbefe0;
+}
+
+.note-image span {
+  font-size: 56px;
+  font-weight: 700;
+  color: #e4c66e;
+  opacity: 0.75;
+}
+
+.note-one {
+  background: linear-gradient(135deg, #f8e7d9, #fff5d8);
+}
+
+.note-two {
+  background: linear-gradient(135deg, #e9eee0, #f8e6d9);
+}
+
+.note-info {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px 2px;
+}
+
+.note-info h3 {
+  margin: 12px 0 4px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.note-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 240px;
+  color: #a18a72;
+}
+
+.empty-symbol {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff1c4;
+  color: #d3ad49;
+  font-size: 36px;
+}
+
+.note-empty p {
+  font-size: 15px;
+}
+
+/* ===== フッター ===== */
+footer {
+  margin-top: 64px;
+  padding-bottom: 20px;
+  color: #ad987a;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 760px) {
+  body {
+    padding: 22px 5%;
+  }
+
+  .html-links,
+  .notes-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .html-link {
+    min-height: 86px;
+  }
+
+  .note-image {
+    height: 160px;
+  }
+}
