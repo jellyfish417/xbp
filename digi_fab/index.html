@@ -1,27 +1,76 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>デジタルファブリケーション</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/xbp.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>デジタルファブリケーション</title>
+
+  <!-- 一覧ページ専用CSS -->
+  <link rel="stylesheet" href="./css/degi_fab.css">
+
+  <link rel="shortcut icon" href="../images/xbp.ico">
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    <h1>デジタルファブリケーション</h1>
+
+  <!-- ロゴ -->
+
+  <!-- ページタイトル -->
+  <header class="page-header">
+    <h1>DEGITAL FABRICATION</h1>
     <h2>演習ノート一覧</h2>
+    <p>制作した作品の記録</p>
+  </header>
 
-<ol>
-            <li><a href="./3.html" target="_blank">3Dprinter pinset</a></li>
-        </ol>
+  <!-- 作品一覧 -->
+  <main class="works">
 
+    <!-- 作品1：ピンセット -->
+    <a href="./3.html" class="work-card">
+      <img
+        src="./images/スクリーンショット 2026-10-22 114057.png"
+        alt="3Dプリンターで制作したピンセット"
+      >
+      <div class="work-info">
+        <span class="work-number">WORK 01</span>
+        <h3>3D Printer Pinset</h3>
+        <p>作品を見る ↗</p>
+      </div>
+    </a>
 
-    
-<br>
-<br>
+    <!-- 作品2：追加用 -->
+    <a href="#" class="work-card coming-soon">
+      <div class="empty-image">
+        <span>02</span>
+      </div>
+      <div class="work-info">
+        <span class="work-number">WORK 02</span>
+        <h3>Coming Soon</h3>
+        <p>次の作品を追加予定</p>
+      </div>
+    </a>
 
+    <!-- 作品3：追加用 -->
+    <a href="#" class="work-card coming-soon">
+      <div class="empty-image">
+        <span>03</span>
+      </div>
+      <div class="work-info">
+        <span class="work-number">WORK 03</span>
+        <h3>Coming Soon</h3>
+        <p>次の作品を追加予定</p>
+      </div>
+    </a>
+
+  </main>
+
+  <footer>
+    <p>DIGITAL FABRICATION</p>
+  </footer>
 
 </body>
 </html>

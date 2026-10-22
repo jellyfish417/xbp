@@ -1,0 +1,112 @@
+/* デジタルファブリケーション一覧ページ専用 */
+
+body {
+  background-color: #f6e9ee;
+  color: #382f33;
+}
+
+/* 作品カードの並び */
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 30px 0;
+}
+
+/* 作品カード */
+.work-card {
+  display: block;
+  padding: 16px;
+  background: #fffdf9;
+  color: #382f33;
+  text-decoration: none;
+  border-radius: 18px;
+  border: 1px solid #ead9e0;
+  box-shadow: 0 4px 10px #65405212;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* カーソルを合わせると浮き上がる */
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px #65405225;
+}
+
+/* 作品の写真 */
+.work-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.work-card h3 {
+  margin: 14px 0 8px;
+  font-size: 17px;
+}
+
+.work-card p {
+  color: #a17b8d;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .works {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* かわいい丸みのあるフォント */
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: #f7eaf0;
+  color: #44333b;
+}
+
+/* タイトル */
+.page-header h1 {
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+}
+
+/* タイトルの下の線 */
+.page-header h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin-top: 18px;
+  background: #d59bad;
+  border-radius: 10px;
+}
+
+/* 演習ノート一覧 */
+.page-header h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+/* 説明文 */
+.page-header p {
+  color: #987887;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+/* カードも少し丸く、やわらかく */
+.work-card {
+  border-radius: 20px;
+  border: 1px solid #ead5df;
+  box-shadow: 0 5px 18px #8e627010;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px #8e627025;
+}
