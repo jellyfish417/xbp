@@ -61,27 +61,7 @@ h1 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-    .candy-title {
-     font-family: "Baloo 2", sans-serif;
-    font-size: 42px;
-    font-weight: 800;
-
-      text-align: center;
-    background-color: #ffb6d5;
-    color: white;
-    border: 3px solid #f28bb8;
-    border-radius: 25px;
-
-    font-size: 50px;
-    padding: 18px 0;
-    margin: 10px auto 35px;
-    width: 70%;
-    box-sizing: border-box;
-
-    box-shadow: 0 6px 0 #e98bb2, 0 8px 12px #f5d4e3;
-    text-shadow: 1px 2px 2px #d879a1;
-    letter-spacing: 4px;
-}
+   
 
 h2 {
     font-size: 30px;
@@ -96,22 +76,26 @@ section {
     background-color: #fff8fb;
     border: 2px solid #f6c5d9;
     border-radius: 20px;
-    padding: 20px;
-    margin: 20px auto 35px;
-    max-width: 700px;
+    padding: 20px 24px;
+    margin: 15px auto 25px;
+    width: 88%;
+    max-width: 1200px;
+box-sizing: border-box;
 }
 .sketch h2 {
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: #ee91b7;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 .sketch img {
        display: block;
-    width: 80%;
-    max-width: 500px;
-    margin: 10px auto;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
 
 }
 
@@ -194,21 +178,50 @@ section {
 }
 
 .candy-title {
-    font-family: "Baloo 2", sans-serif;
-    font-size: 55px;
+     font-family: "Baloo 2", sans-serif;
+    font-size: 42px;
     font-weight: 800;
-    text-align: center;
+
+      text-align: center;
     background-color: #ffb6d5;
     color: white;
     border: 3px solid #f28bb8;
     border-radius: 25px;
+
+    font-size: 50px;
     padding: 18px 0;
     margin: 10px auto 35px;
     width: 70%;
     box-sizing: border-box;
+
     box-shadow: 0 6px 0 #e98bb2, 0 8px 12px #f5d4e3;
     text-shadow: 1px 2px 2px #d879a1;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
-  
+
+.candy-title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 3px;
+
+  background: repeating-linear-gradient(
+    45deg,
+    #ff8ab5 0px,
+    #ff8ab5 5px,
+    #fff0a8 25px,
+    #fff0a8 33px,
+    #9edbea 30px,
+    #9edbea 40px
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  -webkit-text-stroke: 1px #9b6275;
+}
+
+
+
  
