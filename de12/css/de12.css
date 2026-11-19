@@ -160,6 +160,14 @@ section h2 {
   background: linear-gradient(135deg, #e9eee0, #f8e6d9);
 }
 
+.note-THREE {
+  background: linear-gradient(135deg, #f1f5b7, #f6dfbd);
+}
+
+.note-FOUR {
+  background: linear-gradient(135deg, #efd1de, #f8efea);
+}
+
 .note-info {
   display: flex;
   align-items: center;

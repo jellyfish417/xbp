@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>プログラミング</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+     <!-- h1.htmlからある行をコピペしてくればOK -->
+      <link rel="stylesheet" href="./css/dedede.css">
+</head>
+<body>
+   
+<header>
+        <p class="logo">✦ TREASURE HUNT ✦</p>
+        <h1>THE SECRET TREASURE</h1>
+        <p class="subtitle">隠された宝物を見つけ出せ。</p>
+    </header>
+
+    <main>
+
+        <section class="about">
+            <p class="number">01 / INTRODUCTION</p>
+            <h2>ゲーム紹介</h2>
+            <p>
+                このゲームは、クイズに正解して
+                隠された宝物を探していくゲームです。
+                問題を３問正解したらゲームクリアです
+            </p>
+        </section>
+
+        
+        <section class="program">
+            <p class="number">03 / PROGRAM</p>
+            <h2>プログラムコード</h2>
+            <p>
+                今回作成した宝探しクイズゲームの
+                プログラムを紹介します。
+            </p>
+
+            <pre><code>
+import time
+print("==============================")
+print(" 宝箱の謎を解いてお宝を手に入れろ!!")
+print("==============================")
+time.sleep(1)
+print("3つの宝箱に隠された謎を解こう！")
+time.sleep(1)
+print("正解したらお宝GET")
+time.sleep(1)
+print("間違えたらゲームオーバー！")
+time.sleep(2)
+print("------------------------------")
+
+# 1問目
+print("1つ目の宝箱を発見！")
+time.sleep(1)
+
+print("腕じゃなくて頭にする注射はなんだ？")
+
+answer = input("答えを入力してね：")
+
+if answer == "カチューシャ":
+    print()
+    print("正解！！宝箱が開いた！")
+else:
+    print("残念！不正解...")
+    time.sleep(1)
+    print("頭の上から大量の毒蛇が落ちてきた、、、")
+    exit()
+
+print("------------------------------")
+# 2問目
+print("2つ目の宝箱を発見！")
+time.sleep(1)
+print("目はあるのに、ものが見えないものはなぁんだ？")
+
+answer = input("答えを入力してね：")
+
+if answer == "台風":
+    print()
+    print("正解！！宝箱が開いた！")
+else:
+    print("残念！不正解...")
+    time.sleep(1)
+    print("雷が直撃して死亡、、、")
+    exit()
+
+
+# 3問目
+print("3つ目の宝箱を発見！")
+
+time.sleep(1)
+print("目だったら４，鼻だったら９，じゃあ口だったらなぁんだ？")
+
+answer = input("答えを入力してね：")
+
+if answer == "３":
+    print()
+    print("正解！！宝箱が開いた！")
+else:
+    print("残念！不正解...")
+    time.sleep(1)
+    print("床が開いて地獄行の穴に落っこちた、、、")
+    exit()
+print("------------------------------")
+
+# 3問正解した場合
+print("     🎉 ゲームクリア！！")
+time.sleep(1)
+print("   3つの宝箱をすべて開けた！")
+time.sleep(1)
+print("************************")
+
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        ✦ THE SECRET TREASURE ✦
+    </footer>
+
+</body>
+</html>
