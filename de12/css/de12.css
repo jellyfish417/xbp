@@ -167,6 +167,9 @@ section h2 {
 .note-FOUR {
   background: linear-gradient(135deg, #efd1de, #f8efea);
 }
+.note-five {
+  background: linear-gradient(135deg, #eff8ee, #f8f1d4);
+}
 
 .note-info {
   display: flex;

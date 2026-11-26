@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5EFE5;
+    font-family: "Yu Gothic", sans-serif;
+    color: #624B3A;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: #A58A72;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.english {
+    color: #9A806B;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #FFFCF7;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(100, 75, 50, 0.08);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.card p {
+    line-height: 2;
+    color: #766354;
+}
+
+pre {
+    background-color: #302D2B;
+    color: #F5E8D8;
+    text-align: left;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    overflow-x: auto;
+    line-height: 1.8;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
